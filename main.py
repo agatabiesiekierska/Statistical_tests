@@ -8,6 +8,8 @@ from test_t_studenta import *
 
 
 class WindowApplication(QMainWindow):
+# class that is responsible for dispalying the program window
+
     def __init__(self):
         super().__init__()
 
@@ -16,7 +18,7 @@ class WindowApplication(QMainWindow):
         self.setGeometry(0,0,650,400)
         self.setStyleSheet('background-color: lightgray')
 
-# Set the Label the title to the programm  
+# Set the Label - the title to the programm  
         self.label_1 = QLabel('='*5 + 'STATISTICAL TESTS' + '='*5, self)
         self.label_1.move(15, 2)
         self.label_1.resize(600,100)
@@ -100,6 +102,7 @@ class WindowApplication(QMainWindow):
         self.textbox_3.move(450,200)
         self.textbox_3.resize(100,40)
         self.textbox_3.setStyleSheet('background-color : white')
+
 # action method for Dixon
     def on_click_1(self):
         try:
